@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="src/css/main.css">
+
+    <title>Simple Photo Changer</title>
+  </head>
+  <body>
+    <section class="photo js-main-container">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="photo__main js-main-photo">
+              <button data-direction="left" class="js-photo-btn photo__btn photo__btn--left photo__btn--disabled">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-left"><polyline points="15 18 9 12 15 6"></polyline></svg>
+              </button class="photo__btn">
+              <img class="img-fluid" src="./src/image/1.jpg">
+              <button data-direction="right" class="js-photo-btn photo__btn photo__btn--right">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg>
+              </button>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div data-item="1" class="js-main-photo-change photo__annotation active">
+                  <img class="img-fluid" src="./src/image/1.jpg">
+                </div>
+              </div>
+              <div class="item">
+                <div data-item="2" class="js-main-photo-change photo__annotation">
+                  <img class="img-fluid" src="./src/image/2.jpg">
+                </div>
+              </div>
+              <div class="item">
+                <div data-item="3" class="js-main-photo-change photo__annotation">
+                  <img class="img-fluid" src="./src/image/3.jpg">
+                </div>
+              </div>
+              <div class="item">
+                <div data-item="4" class="js-main-photo-change photo__annotation">
+                  <img class="img-fluid" src="./src/image/4.jpg">
+                </div>
+              </div>
+              <div class="item">
+                <div data-item="5" class="js-main-photo-change photo__annotation">
+                  <img class="img-fluid" src="./src/image/5.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="src/js/owl.carousel.min.js"></script>
+    <script src="src/js/main.js"></script>
+  </body>
+</html>

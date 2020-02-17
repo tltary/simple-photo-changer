@@ -1,0 +1,47 @@
+.photo {
+
+}
+.photo .photo__main {
+    margin-bottom: 30px;
+    position: relative;
+}
+.photo .photo__annotation {
+    opacity: 0.7;
+    transition: opacity .3s ease-in-out;
+    cursor: pointer
+}
+.photo .photo__annotation:hover {
+    opacity: 1;
+}
+.photo .photo__annotation.active {
+    opacity: 1;
+}
+
+.photo .photo__btn {
+    position: absolute;
+    height: 100%;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 60px;
+    transition: background-color .3s ease-in-out;
+    cursor: pointer;
+    outline: none;
+}
+
+.photo .photo__btn:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.photo .photo__btn.photo__btn--disabled {
+    display: none;
+}
+
+.photo .photo__btn.photo__btn--left {
+    left: 0;
+    top: 0;
+}
+
+.photo .photo__btn.photo__btn--right {
+    right: 0;
+    top: 0;
+}
